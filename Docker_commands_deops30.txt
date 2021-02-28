@@ -1,0 +1,129 @@
+#
+docker status
+systemctl status docker
+apt-get remove docker docker-engine docker.io containerd runc
+fuser /var/lib/dpkg/lock-frontend 
+kill -9 5403
+apt-get remove docker docker-engine docker.io containerd runc
+apt-get update
+apt-get install 
+apt-get install apt-transport-https ca-certificates curl gnupg-agent  software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+add-apt-repository  "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+history 
+systemctl status docker
+systemctl  start  docker
+systemctl  restart  docker
+cd
+mkdir project1
+mkdir project2
+cd project2
+vim Dockerfile
+docker build -t ajaycs/centos:1.7 .
+docker images
+cat Dockerfile 
+vim Dockerfile 
+docker build -t ajaycs/centos:2.7 .
+cat Dockerfile 
+docker images
+#docker build -t ajaycs/centos:2.7 .
+systemctl status docker
+cat Dockerfile 
+vi Dockerfile 
+vim Dockerfile 
+#docker build -t ajaycs/centos:3.7 .
+docker build -t ajaycs/centos:3.7 .
+cat Dockerfile 
+docker images
+cat Dockerfile 
+docker run -d  --name webserver -p 80:80 ajaycs/centos:3.7
+docker run -d  --name webserver -p 8090:80 ajaycs/centos:3.7
+docker run -d   -p 8090:80 ajaycs/centos:3.7
+docker ps
+docker ps -a
+docker run -d   -P ajaycs/centos:3.7
+docker ps
+docker ps -a
+docker logs ajaycs/centos
+docker logs 107cbb209d65
+vim Dockerfile 
+docker build -t ajaycs/centos:4.7 .
+docker run -d   -p 8090:80 ajaycs/centos:4.7
+docker ps
+docker ps a
+docker ps -a
+#docker run -d   -p 8090:80 ajaycs/centos:4.7
+cat Dockerfile 
+ls
+cat Dockerfile 
+docker ps
+docker exec -it 4f91768720f9 /bin/bash
+docker ps
+#docker exec -it 4f91768720f9 /bin/bash
+ls
+vim nginx.conf
+vim Dockerfile 
+docker build -t ajaycs/centos:5.7 .
+vim Dockerfile 
+docker build -t ajaycs/centos:6.7 .
+#docker run -d -p 9090:9090 ajaycs
+docker images
+docker run -d -p 9090:9090 ajaycs/centos:6.7
+docker ps
+docker login
+docker push ajaycs/centos:6.7
+docker ps
+docker stop bf2d7db09b2d
+docker stop 4f91768720f9
+docker ps
+docker ps -a
+docker rm bf2d7db09b2d
+docker rm `$(docker ps -q -a)`
+docker ps -aq
+docker rm `($docker ps -aq)`
+docker rm `(docker ps -aq)`
+docker ps -a
+docker ps -aq
+docker images
+docker rmi <image name  or image id>
+docker images -qa
+docker rmi `(docker images -q)`
+docker images
+docker -f rmi `(docker images -q)`
+docker rmi  -f `(docker images -q)`
+docker imahes
+docker images
+docker run -d -p 9090:9090 ajaycs/centos:6.7
+docker images
+docker ps
+docker pull ajaycs/centos:v1
+docker images
+cat Dockerfile 
+docker
+docker ps
+docker run -d -p 9090:9090 ajaycs/centos:6.7
+netstat -tnlup | grep 9090
+id docker
+cat /etc/groups
+cat /etc/grou | grep docker
+cat /etc/group | grep docker
+usermod -G  docker jenkins
+usermod  jenkins -G docker
+vi /etc/group
+docker run --name myjenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins_home jenkins
+docker run --name myjenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins_home jenkins:2.60.3
+docker run  -p 8081:8080 -p 50000:50000 -v /var/jenkins_home jenkins:2.60.3
+docker run -d  -p 8081:8080 -p 50000:50000 -v /var/jenkins_home jenkins:2.60.3
+docker ps
+cd /var/lib/docker/volumes/
+ls
+ls -lrt
+date
+cd 58e765198ba41b2a16a7d7f80d5ee689de493c2abd4deb22b5bfa0b6eb76696b/
+ls
+cd _data/
+ls
+pwd
+cat secrets/initialAdminPassword 
+cd
+history 
